@@ -1,5 +1,7 @@
 // import functions and grab DOM elements
+import { renderMovie } from './utils.js';
 
+const moviesListEl = document.getElementById('movies-list');
 // let state
 
 // set event listeners 

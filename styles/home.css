@@ -1,1 +1,35 @@
 /* add home page styles here */
+#movies-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 25px;
+}
+
+.actors {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
