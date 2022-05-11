@@ -12,22 +12,30 @@ export function renderMovie(movie) {
     movieh4.textContent = `Genre: `;
     movieh4.classList.add('genre');
 
-    const ul = document.createElement('ul');
-    ul.classList.add('genre');
-    for (let genre of movie.genre) {
-        const li = document.createElement('li');
-        li.textContent = genre;
-        ul.append(li);
-    }
+    const p = document.createElement('p');
+    p.textContent = movie.genre;
 
-    const actorUl = document.createElement('ul');
-    actorUl.classList.add('actors');
-    for (let actor of movie.actors) {
-        const li = document.createElement('li');
-        li.textContent = actor + ' ';
-        actorUl.append(li);
-    }
+    const actorP = document.createElement('p');
 
-    movieDiv.append(movieh2, movieImg, movieh4, ul, actorUl);
+    actorP.textContent = movie.actor;
+
+    
+    movieDiv.append(movieh2, movieImg, movieh4, p, actorP);
     return movieDiv;
 }
+
+// const ul = document.createElement('ul');
+// ul.classList.add('genre');
+// for (let genre of movie.genre) {
+//     const li = document.createElement('li');
+//     li.textContent = genre;
+//     ul.append(li);
+// }
+
+// const actorUl = document.createElement('ul');
+// actorUl.classList.add('actors');
+// for (let actor of movie.actors) {
+//     const li = document.createElement('li');
+//     li.textContent = actor + ' ';
+//     actorUl.append(li);
+// }
