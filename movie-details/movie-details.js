@@ -12,8 +12,8 @@ async function loadMovieDetails() {
     const movie = await getMovieById(id);
     movieName.textContent = movie.title;
     movieImage.src = `.${movie.img}`;
-    movieGenre.textContent = movie.genre;
-    movieStar.textContent = movie.actor;
+    movieGenre.textContent = `Genre: ${movie.genre}`;
+    movieStar.textContent = `Starring: ${movie.actor}`;
 }
 
 loadMovieDetails();

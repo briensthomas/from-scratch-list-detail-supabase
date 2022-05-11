@@ -1,7 +1,17 @@
-#movies-list {
+body {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.movies-list {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin: 25px;
 }
 
 .genre {
@@ -11,22 +21,12 @@
     font-weight: 700;
 }
 
-.movie img {
+.movie-image {
     width: 100%;
 }
 
-.movie {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    margin: 25px;
-}
 
-.actors {
+.movie-star {
     display: flex;
     align-items: center;
     justify-items: center;
