@@ -8,3 +8,9 @@ export async function getMovies() {
     console.log(response);
     return response.data;
 }
+
+export async function getMovieById(idFromParameters) {
+    const response = await client.from('Movies').select('*').match({ id: idFromParameters }).single();
+    console.log(response);
+    return response.data;
+}

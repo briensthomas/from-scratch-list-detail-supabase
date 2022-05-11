@@ -8,6 +8,9 @@ export function renderMovie(movie) {
     const movieImg = document.createElement('img');
     movieImg.src = movie.img;
 
+    const movieAnchor = document.createElement('a');
+    movieAnchor.href = `./movie-details/?id=${movie.id}`;
+
     const movieh4 = document.createElement('h4');
     movieh4.textContent = `Genre: `;
     movieh4.classList.add('genre');
@@ -19,8 +22,8 @@ export function renderMovie(movie) {
 
     actorP.textContent = movie.actor;
 
-    
-    movieDiv.append(movieh2, movieImg, movieh4, p, actorP);
+    movieAnchor.append(movieh2, movieImg);
+    movieDiv.append(movieAnchor, movieh4, p, actorP);
     return movieDiv;
 }
 
