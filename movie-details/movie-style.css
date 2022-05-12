@@ -1,8 +1,85 @@
+ol, ul {
+    list-style: none;
+}
+
+nav {
+    width: 15vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    background: gray;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: gray;
+    display: block;
+    float: left;
+    padding: .25rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+li a {
+    color: black;
+}
+
+li:hover, 
+li:focus-within {
+    background: white;
+    cursor: pointer;
+}
+
+li:focus-within a {
+    outline: none;
+
+}
+
+ul li ul {
+    background: gray;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin: 0.25rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .movies-list {
     width: 300px;
     display: flex;
@@ -10,7 +87,6 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid black; */
     margin: 25px;
 }
 

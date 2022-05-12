@@ -8,15 +8,27 @@
     <link rel="stylesheet" href="./movie-style.css"
 </head>
 <body>
-    <a href="/">Home</a>
-    <div class="movies-list">
-        <h2 id="movie-name"></h2>
-        <img class="movie-image" id="movie-image" src="" />
-        <p class="genre" id="movie-genre">
-        </p>
-        <p class="movie-star" id="movie-star">
-        </p>
+        <nav role="navigation">
+            <ul class="dropdown" aria-haspopup="true">
+                <li><a href="/">Home</a></li>
+                <li><a href="./movie-details/?id=1">The Gentlemen</a></li>
+                <li><a href="./movie-details/?id=2">The Thing</a></li>
+                <li><a href="./movie-details/?id=3">Master and Commander</a></li>
+                <li><a href="./movie-details/?id=4">The Assistant</a></li>
+                <li><a href="./movie-details/?id=4">Harry Potter and the Prisoner of Azkaban</a></li>
+                
+            </ul>
+        </nav>
+    <div class="center">
+        <div class="movies-list">
+            <h1 id="movie-name"></h1>
+            <img class="movie-image" id="movie-image" src="" />
+            <p class="genre" id="movie-genre">
+            </p>
+            <p class="movie-star" id="movie-star">
+            </p>
+        </div>
     </div>
-</body>
+    </body>
 <script src="./movie-details.js" type="module"></script>
 </html>
