@@ -4,7 +4,7 @@ const movieName = document.getElementById('movie-name');
 const movieImage = document.getElementById('movie-image');
 const movieGenre = document.getElementById('movie-genre');
 const movieStar = document.getElementById('movie-star');
-
+const movieTitle = document.getElementById('title');
 
 async function loadMovieDetails() {
     const parameters = new URLSearchParams(window.location.search);
@@ -14,6 +14,7 @@ async function loadMovieDetails() {
     movieImage.src = `.${movie.img}`;
     movieGenre.textContent = `Genre: ${movie.genre}`;
     movieStar.textContent = `Starring: ${movie.actor}`;
+    movieTitle.textContent = `${movie.title}`;
 }
 
 loadMovieDetails();
