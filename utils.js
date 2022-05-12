@@ -12,18 +12,12 @@ export function renderMovie(movie) {
     movieAnchor.href = `./movie-details/?id=${movie.id}`;
 
     const movieh4 = document.createElement('h4');
-    movieh4.textContent = `Genre: `;
+    movieh4.textContent = `${movie.genre}`;
     movieh4.classList.add('genre');
 
-    const p = document.createElement('p');
-    p.textContent = movie.genre;
-
-    const actorP = document.createElement('p');
-
-    actorP.textContent = movie.actor;
 
     movieAnchor.append(movieh2, movieImg);
-    movieDiv.append(movieAnchor, movieh4, p, actorP);
+    movieDiv.append(movieAnchor, movieh4);
     return movieDiv;
 }
 
