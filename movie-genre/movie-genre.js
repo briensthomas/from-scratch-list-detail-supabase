@@ -3,7 +3,7 @@ import { renderMovieByGenre } from '../utils.js';
 
 
 const movieGenreList = document.getElementById('movie-genre-list');
-
+const pageTitle = document.getElementById('genre-page');
 
 
 async function loadMovieGenre() {
@@ -14,6 +14,7 @@ async function loadMovieGenre() {
         const render = renderMovieByGenre(movie);
         movieGenreList.append(render);
     }
+    pageTitle.textContent = params.get('genre');
 }
 
 loadMovieGenre();
