@@ -20,7 +20,7 @@ async function loadMovieDetails() {
 loadMovieDetails();
 
 function classToggle() {
-    const navs = document.querySelectorAll('.navbar-items')
+    const navs = document.querySelectorAll('.navbar-items');
 
     navs.forEach(nav => nav.classList.toggle('navbar-toggleShow'));
 }
