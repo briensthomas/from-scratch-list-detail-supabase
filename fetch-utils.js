@@ -14,3 +14,10 @@ export async function getMovieById(idFromParameters) {
     console.log(response);
     return response.data;
 }
+
+export async function getMovieByGenre(movieGenre) {
+    console.log(movieGenre);
+    const response = await client.from('Movies').select('*').like('genre', `%${movieGenre}%`);
+    console.log(response);
+    return response.data;
+}

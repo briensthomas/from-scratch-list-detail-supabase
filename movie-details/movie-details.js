@@ -18,3 +18,5 @@ async function loadMovieDetails() {
 }
 
 loadMovieDetails();
+
+// Function to load list of movies by genre
