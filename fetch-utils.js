@@ -5,19 +5,15 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getMovies() {
     const response = await client.from('Movies').select('*');
-    console.log(response);
     return response.data;
 }
 
 export async function getMovieById(idFromParameters) {
     const response = await client.from('Movies').select('*').match({ id: idFromParameters }).single();
-    console.log(response);
     return response.data;
 }
 
 export async function getMovieByGenre(movieGenre) {
-    console.log(movieGenre);
     const response = await client.from('Movies').select('*').like('genre', `%${movieGenre}%`);
-    console.log(response);
     return response.data;
 }

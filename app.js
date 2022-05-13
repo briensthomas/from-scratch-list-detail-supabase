@@ -11,7 +11,6 @@ const moviesListEl = document.getElementById('movies-list');
   // update DOM to reflect the new state
 async function loadMovies() {
     const movies = await getMovies();
-    console.log(movies);
 
     for (let movie of movies) {
         const movieDiv = renderMovie(movie);
