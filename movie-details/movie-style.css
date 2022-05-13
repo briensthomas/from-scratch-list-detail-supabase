@@ -30,11 +30,10 @@ ol, ul {
 }
 
 .dropdown {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    padding-bottom: 16px;
+    position: relative;
+    float: left;
+    padding-bottom: 0px;
+    margin: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -123,7 +122,7 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 40px;
+    --header-height: 50px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
@@ -131,6 +130,7 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
+
 html, body {
     height: 100%;
     width: 100%;
@@ -154,6 +154,11 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .gutter-right {
