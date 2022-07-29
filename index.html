@@ -5,63 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Movies</title>
 </head>
 
 <body>
     <header>
+        <nav role="navigation">
+            <div class="dropdown">
+                <span><a href=>Movies</a></span>
+                <ul class="dropdown-content" aria-haspopup="true" id="ul-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./movie-details/?id=14">Aniara</a></li>
+                    <li><a href="./movie-details/?id=7">A Knight's Tale</a></li>
+                    <li><a href="./movie-details/?id=20">Attack of the Killer Tomatoes</a></li>
+                    <li><a href="./movie-details/?id=15">Doctor Strange in the Multiverse of Madness</a></li>
+                    <li><a href="./movie-details/?id=21">Dune</a></li>
+                    <li><a href="./movie-details/?id=18">Eurovision Song Contest: The Story of Fire Saga</a></li>
+                    <li><a href="./movie-details/?id=17">Everything Everywhere All at Once</a></li>
+                    <li><a href="./movie-details/?id=5">Harry Potter and the Prisoner of Azkaban</a></li>
+                    <li><a href="./movie-details/?id=3">Master and Commander</a></li>
+                    <li><a href="./movie-details/?id=13">Princess Mononoke</a></li>
+                    <li><a href="./movie-details/?id=12">Money Talks</a></li>
+                    <li><a href="./movie-details/?id=9">Seven</a></li>
+                    <li><a href="./movie-details/?id=11">Spider-Man 3</a></li>
+                    <li><a href="./movie-details/?id=19">Star Wars Episode II: Attack of the Clones</a></li>
+                    <li><a href="./movie-details/?id=4">The Assistant</a></li>
+                    <li><a href="./movie-details/?id=6">The Black Cauldron</a></li>
+                    <li><a href="./movie-details/?id=1">The Gentlemen</a></li>
+                    <li><a href="./movie-details/?id=10">The Old Guard</a></li>
+                    <li><a href="./movie-details/?id=16">The Science of Sleep</a></li>
+                    <li><a href="./movie-details/?id=2">The Thing</a></li>
+                    <li><a href="./movie-details/?id=8">Willy's Wonderland</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <span><a href="#">Genres</a></span>
+                <ul class="dropdown-content">
+                    <li><a href="./movie-genre/?genre=Action">Action</a></li>
+                    <li><a href="./movie-genre/?genre=Adventure">Adventure</a></li>
+                    <li><a href="./movie-genre/?genre=Animation">Animation</a></li>
+                    <li><a href="./movie-genre/?genre=Anime">Anime</a></li>
+                    <li><a href="./movie-genre/?genre=Comedy">Comedy</a></li>
+                    <li><a href="./movie-genre/?genre=Crime">Crime</a></li>
+                    <li><a href="./movie-genre/?genre=Drama">Drama</a></li>
+                    <li><a href="./movie-genre/?genre=Fantasy">Fantasy</a></li>
+                    <li><a href="./movie-genre/?genre=Horror">Horror</a></li>
+                    <li><a href="./movie-genre/?genre=Kids & Family">Kids & Family</a></li>
+                    <li><a href="./movie-genre/?genre=Musical">Musical</a></li>
+                    <li><a href="./movie-genre/?genre=Mystery & Thriller">Mystery & Thriller</a></li>
+                    <li><a href="./movie-genre/?genre=Romance">Romance</a></li>
+                    <li><a href="./movie-genre/?genre=Sci-Fi">Sci-Fi</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
-        </section>
+        <div id="movies-list">
+        </div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
